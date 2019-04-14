@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">FinalProject</string>
 
+    // newsfeed
+
+    <string name="welcome_hd">WELCOME TO THE NEWS FEED CRAWLER</string>
+    <string name="search_hd">Search</string>
+    <string name="type_search_hd">Enter search term here</string>
+    <string name="save_article_hd">Save</string>
+    <string name="del_article_hd">Delete</string>
+    <string name="return_article_hd">Return</string>
+    <string name="title_hd">Title: </string>
+    <string name="uuid_hd">uuid: </string>
+    <string name="enter_dic">Merriam Webster Dictionary</string>
+    <string name="enter_fst">Flight Status Tracker</string>
+    <string name="enter_nyt">New York Times Article Search</string>
+    <string name="help">Help </string>
+    <string name="delete_btn_dic_rl">delete</string>
+
 </resources>
