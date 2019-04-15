@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newsfeed.NewsFeedSearches_activity">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progressBar_hd"/>
+
+    <TextView
+        android:id="@+id/title_hd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@id/progressBar_hd"
+        android:text="@string/title_hd" />
+
+    <TextView
+        android:id="@+id/uuid_hd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@id/title_hd"
+        android:text="@string/uuid_hd" />
+
+    <TextView
+        android:id="@+id/article_hd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@id/uuid_hd"
+        android:text="article: " />
+
+    <Button
+        android:id="@+id/savebtn_hd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/article_hd"
+        android:text="@string/save_article_hd" />
+
+    <Button
+        android:id="@+id/deletebtn_hd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/savebtn_hd"
+        android:text="@string/del_article_hd" />
+    <Button
+        android:id="@+id/returnbtn_hd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deletebtn_hd"
+        android:text="@string/return_article_hd" />
+
+</RelativeLayout>
