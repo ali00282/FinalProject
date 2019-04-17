@@ -6,13 +6,17 @@ public class News_activity {
     private String body;
     private int newsID;
 
-    //indicates the title, body and idConstructor
+    /*
+    initializing the title, body and newsID of the article
+     */
     public News_activity(String title, String body, int newsID){
         this.title = title;
         this.body = body;
         this.newsID = newsID;
     }
-    //getter and setters
+    /*
+    getters and setters for each
+     */
     public String getTitle() {
         return title;
     }

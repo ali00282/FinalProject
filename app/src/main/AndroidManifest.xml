@@ -13,7 +13,10 @@
         android:theme="@style/AppTheme">
         <activity android:name=".dictionary.Dict_EmptyActivity"></activity>
         <activity android:name=".dictionary.Dict_MainActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".newsfeed.NewsFeedMain_activity"/>
+        <activity android:name=".flighttracker.MainActivity"/>
+        <activity android:name=".nytimes.MainActivity_nytimess">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,5 +24,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

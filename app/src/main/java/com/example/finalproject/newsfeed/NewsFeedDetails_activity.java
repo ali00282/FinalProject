@@ -1,18 +1,10 @@
 package com.example.finalproject.newsfeed;
 
 
-import android.content.DialogInterface;
 import android.graphics.Typeface;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.finalproject.R;
 
@@ -23,9 +15,9 @@ public class NewsFeedDetails_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news_feed_detailed);
-
-        //set title to bold
         TextView tv = (TextView) findViewById(R.id.news_title_detailed);
+
+        //boldening the title
         Typeface boldTypeface = Typeface.defaultFromStyle(Typeface.BOLD);
         tv.setTypeface(boldTypeface);
 

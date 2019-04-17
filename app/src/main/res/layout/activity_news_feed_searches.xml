@@ -15,47 +15,47 @@
         android:id="@+id/progressBar_hd"/>
 
     <TextView
-        android:id="@+id/title_hd"
+        android:id="@+id/article_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_below="@id/progressBar_hd"
-        android:text="@string/title_hd" />
+        android:text="@string/title" />
 
     <TextView
-        android:id="@+id/uuid_hd"
+        android:id="@+id/id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:layout_below="@id/title_hd"
-        android:text="@string/uuid_hd" />
+        android:layout_below="@id/article_title"
+        android:text="@string/id" />
 
     <TextView
         android:id="@+id/article_hd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:layout_below="@id/uuid_hd"
+        android:layout_below="@id/id"
         android:text="article: " />
 
     <Button
-        android:id="@+id/savebtn_hd"
+        android:id="@+id/saveBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/article_hd"
-        android:text="@string/save_article_hd" />
+        android:text="@string/saveBtn" />
 
     <Button
-        android:id="@+id/deletebtn_hd"
+        android:id="@+id/delete_articleBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/savebtn_hd"
-        android:text="@string/del_article_hd" />
+        android:text="@string/delete_articleBtn" />
     <Button
-        android:id="@+id/returnbtn_hd"
+        android:id="@+id/returnBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/deletebtn_hd"
-        android:text="@string/return_article_hd" />
+        android:text="@string/returnBtn" />
 
 </RelativeLayout>

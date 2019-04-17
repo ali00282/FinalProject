@@ -15,31 +15,31 @@
         android:background="@color/colorPrimary"/>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/welcome"
         android:layout_width="match_parent"
         android:layout_height="54dp"
-        android:text="@string/welcome_hd"
+        android:text="@string/welcome_statment"
         android:textAlignment="center"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/edit_search"
+        android:id="@+id/edit_term"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/type_search_hd"
+        android:hint="@string/enter_term"
         android:inputType="text"
         android:textAlignment="center"
         tools:layout_editor_absoluteY="2dp"
         tools:layout_editsor_absoluteX="0dp" />
     <Button
-        android:id="@+id/search_btn"
+        android:id="@+id/search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/search_hd" />
+        android:text="@string/search" />
 
     <ListView
-        android:id="@+id/news_feed_list"
+        android:id="@+id/newsfeed_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="2"/>

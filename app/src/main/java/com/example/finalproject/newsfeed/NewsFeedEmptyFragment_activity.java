@@ -18,12 +18,22 @@ public class NewsFeedEmptyFragment_activity extends AppCompatActivity {
 
         //This is copied directly from FragmentExample.java lines 47-54
         NewsFeedDetailFragment_activity dFragment = new NewsFeedDetailFragment_activity();
-        dFragment.setArguments( dataToPass ); //pass data to the the fragment
-        dFragment.setTablet(false); //tell the Fragment that it's on a phone.
+
+
+        //fragment gets data passed to it
+        dFragment.setArguments( dataToPass );
+
+        //fragment not on a tablet device so on a phone
+        dFragment.setTablet(false);
+
         getSupportFragmentManager()
+
                 .beginTransaction()
+
                 .add(R.id.fragmentLocation, dFragment)
+
                 .addToBackStack("AnyName")
+
                 .commit();
     }
 }

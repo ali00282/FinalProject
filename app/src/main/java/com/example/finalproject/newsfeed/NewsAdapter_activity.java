@@ -43,7 +43,9 @@ public class NewsAdapter_activity extends BaseAdapter {
                     inflate(R.layout.activity_news_list_item, parent, false);
         }
         News_activity currentItem = (News_activity) getItem(position);
+
         TextView textViewItemName = (TextView) convertView.findViewById(R.id.news_title);
+
         textViewItemName.setText(currentItem.getTitle());
 
         return convertView;

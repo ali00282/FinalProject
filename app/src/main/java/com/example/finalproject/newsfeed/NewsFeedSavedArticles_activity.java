@@ -40,10 +40,9 @@ public class NewsFeedSavedArticles_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news_feed_saved_article);
-        // there is no array list
-        if (newsArrayList == null) {
 
-            //then create one
+        // in the case of no arrayList, create one
+        if (newsArrayList == null) {
             newsArrayList = new ArrayList<>();
         }
 
@@ -53,6 +52,7 @@ public class NewsFeedSavedArticles_activity extends AppCompatActivity {
 
         //locate all data
         this.findAllData(database);
+
         //locating the listView object
         ListView theList = (ListView)findViewById(R.id.saved_news_list_hd);
 

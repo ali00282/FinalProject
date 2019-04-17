@@ -99,7 +99,7 @@ public class NewsFeedSearches_activity extends AppCompatActivity {
         //here is the uuid value
         public String uuid;
 
-        // here attmepting to create connection
+        // here attempting to establish connection
         @Override
         protected String doInBackground(String... params) {
 
@@ -118,7 +118,7 @@ public class NewsFeedSearches_activity extends AppCompatActivity {
                 InputStream inStream = connection.getInputStream();
                 int responseCode = connection.getResponseCode();
 
-                //determine if it is a failed respose or successful one
+                //determine if it is a failed response or successful one
                 if (responseCode == 200) {
                     Log.e("Conection to WEBHOSE", "Successful" );
                 } else {
@@ -166,7 +166,7 @@ public class NewsFeedSearches_activity extends AppCompatActivity {
             return "Finished task";
         }
 
-        // to update an progress indicators,
+        // updating progress indicators
         @Override
         protected void onProgressUpdate(Integer... values) {
             Log.i("AsyncTask", "update:" + values[0]);
@@ -180,7 +180,7 @@ public class NewsFeedSearches_activity extends AppCompatActivity {
             progressBar.setMax(100);
         }
 
-        //Function of AsyncTask
+        //AsyncTask
         @Override
         protected void onPostExecute(String args) {
             Log.i("AsyncTask", "onPostExecute" );
@@ -212,18 +212,19 @@ public class NewsFeedSearches_activity extends AppCompatActivity {
         builder.setMessage("Are you sure you want to delete article?")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        // What to do on Accept
+
+                        // when article has been successfully deleted
                         showToast("Article Has Been Successfully Deleted.");
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        //else
+
+                        //otherwise
                     }
                 }).setView(middle);
         builder.create().show();
     }
-    //here we have the toast message
     public void showToast(String msg){
         Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
     }

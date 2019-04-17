@@ -2,25 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/go_flight"
-        android:title="@string/enter_fst"
+    <item android:id="@+id/flight_icon"
+        android:title="@string/fst_icon"
         android:icon="@drawable/flight_tracker"
         android:orderInCategory="200"
         app:showAsAction="always"/>
 
-    <item android:id="@+id/go_dic"
-        android:title="@string/enter_dic"
-        android:icon="@drawable/newsfeed_dictionary"
+    <item android:id="@+id/dic_icon"
+        android:title="@string/dic_icon"
+        android:icon="@drawable/dic_icon"
         android:orderInCategory="100"
         app:showAsAction="always"/>
 
-    <item android:id="@+id/go_new_york"
-        android:title="@string/enter_nyt"
+    <item android:id="@+id/new_york_icon"
+        android:title="@string/nyt_icon"
         android:icon="@drawable/new_york_times"
         android:orderInCategory="300"
         app:showAsAction="always"/>
 
-    <item android:id="@+id/go_help"
+    <item android:id="@+id/help"
         android:title="@string/help"
         android:orderInCategory="500"
         app:showAsAction="never"/>

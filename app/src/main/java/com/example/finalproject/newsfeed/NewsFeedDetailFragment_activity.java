@@ -12,7 +12,9 @@ import android.widget.TextView;
 
 import com.example.finalproject.R;
 
-//fragment used to create layouts for various devices
+/*
+creating different layout depending on the device
+ */
 public class NewsFeedDetailFragment_activity extends Fragment {
 
     //if its a tablet
@@ -26,17 +28,14 @@ public class NewsFeedDetailFragment_activity extends Fragment {
     // this is for id from previous page
     private long prevId;
 
-    //setting the tablet
-    // @param tablet
 
+    //method to set the tablet
     public void setTablet(boolean tablet) {
 
-        // if it is a tablet
+        // in the case that it is a tablet
         ifTablet = tablet;
-
     }
-
-    //when the emptyFragment page is launched, methods inflater, container and savedInstance wwill run
+    //when the emptyFragment page is launched, methods inflater, container and savedInstance will run
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -54,11 +53,11 @@ public class NewsFeedDetailFragment_activity extends Fragment {
         TextView idView = (TextView)result.findViewById(R.id.idText);
         idView.setText("ID is "+ prevId);
 
-        //show the word content
+        //this is to display the show the word content
         TextView contentView = (TextView)result.findViewById(R.id.news_title);
         idView.setText(dataFromPrevActivity.getString(NewsFeedSavedArticles_activity.ITEM_SELECTED));
 
-        // adding a clickListenenr to our delete button
+        // adding a clickListenenr to listen to the deleteButton
         Button deleteButton = (Button)result.findViewById(R.id.deleteButton);
         deleteButton.setOnClickListener( clk -> {
 
@@ -87,6 +86,8 @@ public class NewsFeedDetailFragment_activity extends Fragment {
                 parent.finish();
             }
         });
+
+        
         return result;
     }
 }

@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
-        android:id="@+id/news_title"
+        android:id="@+id/titles"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/idText"/>
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="@string/delete_btn_dic_rl"
+        android:text="@string/deleteBtn"
         android:id="@+id/deleteButton"/>
 
 </RelativeLayout>
