@@ -16,29 +16,65 @@ import android.widget.TextView;
 import com.squareup.picasso.Picasso;
 
 
-
+/**
+ * The type Nytimes search fragment.
+ */
 public class nytimes_search_fragment extends Fragment {
 
 
+    /**
+     * The Ttl article.
+     */
     protected TextView ttl_article;
+    /**
+     * The Weburl article.
+     */
     protected TextView weburl_article;
+    /**
+     * The Img article.
+     */
     protected ImageView img_article;
+    /**
+     * The Dlt button.
+     */
     protected Button dltButton;
 
+    /**
+     * The Itent.
+     */
     Intent itent;
+    /**
+     * The Articlenoid.
+     */
     int articlenoid;
+    /**
+     * The Weburl text.
+     */
     String weburlText;
 
+    /**
+     * The constant urlTextforLoad.
+     */
     public static String urlTextforLoad;
+    /**
+     * The Article popwindow.
+     */
     protected nytimes_articles_saved article_popwindow;
 
+    /**
+     * Instantiates a new Nytimes search fragment.
+     */
     public nytimes_search_fragment() {
 
         super();
     }
 
 
-
+    /**
+     * Instantiates a new Nytimes search fragment.
+     *
+     * @param article_popwindow the article popwindow
+     */
     @SuppressLint("ValidFragment")
     public nytimes_search_fragment(nytimes_articles_saved article_popwindow) {
         super();

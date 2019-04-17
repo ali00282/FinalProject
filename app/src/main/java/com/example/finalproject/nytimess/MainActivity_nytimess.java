@@ -5,6 +5,9 @@ import android.os.Bundle;
 
 import com.example.finalproject.R;
 
+/**
+ * The type Main activity nytimess.
+ */
 public class MainActivity_nytimess extends AppCompatActivity {
 
     @Override

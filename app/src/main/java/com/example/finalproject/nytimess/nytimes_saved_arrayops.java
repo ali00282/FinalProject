@@ -14,8 +14,17 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 
+/**
+ * The type Nytimes saved arrayops.
+ */
 public class nytimes_saved_arrayops extends ArrayAdapter<nytimes_articles_fetch> {
 
+    /**
+     * Instantiates a new Nytimes saved arrayops.
+     *
+     * @param context  the context
+     * @param articles the articles
+     */
     public nytimes_saved_arrayops(Context context, List<nytimes_articles_fetch> articles) {
         super(context, android.R.layout.simple_list_item_1, articles);
     }

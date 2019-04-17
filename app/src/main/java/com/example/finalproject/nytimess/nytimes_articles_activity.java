@@ -21,41 +21,89 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 
-
+/**
+ * The type Nytimes articles activity.
+ */
 public class nytimes_articles_activity extends AppCompatActivity {
 
 
-    //public static ListAdapter savedAdapter;
+    /**
+     * The constant databaseOpener.
+     */
+//public static ListAdapter savedAdapter;
     nytimes_DataBaseHelper databaseOpener;
 
+    /**
+     * The constant db.
+     */
     public static SQLiteDatabase db;
 
+    /**
+     * The Wbview.
+     */
     WebView wbview;
 
+    /**
+     * The Tlbar.
+     */
     Toolbar tlbar;
 
+    /**
+     * The Storing result.
+     */
     Cursor storing_result;
 
+    /**
+     * The Menuinflater.
+     */
     MenuInflater menuinflater;
 
+    /**
+     * The News site address.
+     */
     String news_site_address;
 
+    /**
+     * The News header title.
+     */
     String news_header_title;
 
+    /**
+     * The constant news_picture.
+     */
     public static String news_picture;
 
+    /**
+     * The Anewid.
+     */
     long anewid;
 
+    /**
+     * The Newrowcontentvalues.
+     */
     ContentValues newrowcontentvalues;
 
+    /**
+     * The Article.
+     */
     nytimes_articles_fetch article;
 
+    /**
+     * The constant saved_Articles.
+     */
     public static ArrayList<nytimes_articles_fetch> saved_Articles = new ArrayList<nytimes_articles_fetch>();
 
+    /**
+     * The constant opsAdapter.
+     */
     public static nytimes_saved_arrayops opsAdapter;
 
 
-
+    /**
+     * Create adapter.
+     *
+     * @param cntxt the cntxt
+     */
     public static void createAdapter(Context cntxt) {
         opsAdapter = new nytimes_saved_arrayops(cntxt, saved_Articles);
 
@@ -118,6 +166,9 @@ public class nytimes_articles_activity extends AppCompatActivity {
     }
 
 
+    /**
+     * On save icon.
+     */
     public void onSaveIcon() {
 
         databaseOpener = new nytimes_DataBaseHelper(this);
@@ -143,6 +194,9 @@ public class nytimes_articles_activity extends AppCompatActivity {
     }
 
 
+    /**
+     * Info dialog.
+     */
     public void infoDialog() {
 
 

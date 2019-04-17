@@ -48,30 +48,81 @@ import cz.msebera.android.httpclient.Header;
 //The nytimes_main class is the main activity of the application
 
 
+/**
+ * The type Nytimes main.
+ */
 public class nytimes_main extends AppCompatActivity {
 
+    /**
+     * The Progression bar.
+     */
     ProgressBar progressionBar;
+    /**
+     * The Edittext query.
+     */
     EditText edittextQuery;
+    /**
+     * The Listview results.
+     */
     ListView listviewResults;
 
+    /**
+     * The Arrarticles.
+     */
     ArrayList<nytimes_articles_fetch> arrarticles;
+    /**
+     * The Btnsavedlist.
+     */
     Button btnsavedlist;
+    /**
+     * The Opsadapter.
+     */
     nytimes_articles_arrayops opsadapter;
 
     private static final String url = "http://api.nytimes.com/svc/search/v2/articlesearch.json";
     private static final String API_KEY = "nGhORsp4W6LhNZnA1DtcYdeVv2Kp0l8r";
 
+    /**
+     * The Snackbar.
+     */
     Snackbar snackbar;
+    /**
+     * The Intent.
+     */
     Intent intent;
 
+    /**
+     * The Sp.
+     */
     SharedPreferences sp;
 
+    /**
+     * The Sl intent.
+     */
     Intent sl_Intent;
+    /**
+     * The Asynclient.
+     */
     AsyncHttpClient asynclient;
+    /**
+     * The Qry.
+     */
     String qry;
+    /**
+     * The Params.
+     */
     RequestParams params;
+    /**
+     * The Database opener.
+     */
     nytimes_DataBaseHelper databaseOpener;
+    /**
+     * The constant db.
+     */
     public static SQLiteDatabase db;
+    /**
+     * The Fetcharticle.
+     */
     nytimes_articles_fetch fetcharticle;
 
 
@@ -199,12 +250,20 @@ public class nytimes_main extends AppCompatActivity {
     }
 
 
+    /**
+     * On article search.
+     *
+     * @param view the view
+     */
     public void onArticleSearch(View view) {
         opsadapter.clear();
         loadMoreData(0);
     }
 
 
+    /**
+     * Alert dialog.
+     */
     public void alertDialog() {
         View middle = getLayoutInflater().inflate(R.layout.nytimes_activity_showdialog, null);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -242,13 +301,42 @@ public class nytimes_main extends AppCompatActivity {
     }
 
 
-
+    /**
+     * The type Forecast query.
+     */
     public class ForecastQuery extends AsyncTask<String, Integer, String> {
-        String min, max, current, iconName;
+        /**
+         * The Min.
+         */
+        String min, /**
+         * The Max.
+         */
+        max, /**
+         * The Current.
+         */
+        current, /**
+         * The Icon name.
+         */
+        iconName;
+        /**
+         * The Icon.
+         */
         Bitmap icon;
+        /**
+         * The Api key.
+         */
         String API_KEY = "nGhORsp4W6LhNZnA1DtcYdeVv2Kp0l8r";
+        /**
+         * The Query.
+         */
         String query = edittextQuery.getText().toString();
+        /**
+         * The Offset.
+         */
         int offset;
+        /**
+         * The J object.
+         */
         JSONObject jObject;
 
         @Override

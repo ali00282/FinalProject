@@ -6,6 +6,9 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 
+/**
+ * The type Nytimes saved articles webview.
+ */
 public class nytimes_saved_articles_webview extends AppCompatActivity {
 
 

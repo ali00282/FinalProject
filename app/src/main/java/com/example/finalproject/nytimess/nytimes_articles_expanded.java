@@ -8,10 +8,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.FrameLayout;
 
 
-
+/**
+ * The type Nytimes articles expanded.
+ */
 public class nytimes_articles_expanded extends AppCompatActivity {
 
+    /**
+     * The Frmlyout.
+     */
     FrameLayout frmlyout;
+    /**
+     * The Msgfragmnt.
+     */
     nytimes_search_fragment msgfragmnt;
 
 

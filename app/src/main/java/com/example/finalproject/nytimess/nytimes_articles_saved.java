@@ -14,13 +14,34 @@ import android.widget.ListView;
 
 // this activity loads  saved articles into Listview
 
+/**
+ * The type Nytimes articles saved.
+ */
 public class nytimes_articles_saved extends AppCompatActivity {
 
+    /**
+     * The Is tablet.
+     */
     protected boolean isTablet;
+    /**
+     * The Listvw 1.
+     */
     ListView listvw1 = (ListView) findViewById(R.id.listviewer1);
+    /**
+     * The Fragmsg.
+     */
     nytimes_search_fragment fragmsg;
+    /**
+     * The Databaseb opener.
+     */
     nytimes_DataBaseHelper databasebOpener = new nytimes_DataBaseHelper(this);
+    /**
+     * The constant db.
+     */
     public static SQLiteDatabase db;
+    /**
+     * The Fetcharticle.
+     */
     nytimes_articles_fetch fetcharticle;
 
     //initializing for both ph and tablets
@@ -92,6 +113,11 @@ public class nytimes_articles_saved extends AppCompatActivity {
     }
 
 
+    /**
+     * Delete item.
+     *
+     * @param delid the delid
+     */
     public void deleteItem(int delid) {
         db.delete(nytimes_DataBaseHelper.TABLE_NAME, nytimes_DataBaseHelper.COL_ID + "=" + delid, null);
 

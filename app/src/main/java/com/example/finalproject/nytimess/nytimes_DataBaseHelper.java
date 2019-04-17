@@ -7,20 +7,48 @@ import android.util.Log;
 import android.app.Activity;
 
 
-
+/**
+ * The type Nytimes data base helper.
+ */
 public class nytimes_DataBaseHelper extends SQLiteOpenHelper {
 
 
+    /**
+     * The constant DATABASE_NAME.
+     */
     public static final String DATABASE_NAME = "MyDatabase";
+    /**
+     * The constant TABLE_NAME.
+     */
     public static final String TABLE_NAME = "ArticlesTable";
+    /**
+     * The constant VERSION_NUM.
+     */
     public static final int VERSION_NUM = 9;
+    /**
+     * The constant COL_ID.
+     */
     public static final String COL_ID = "_id";
+    /**
+     * The constant COL_HEADER.
+     */
     public static final String COL_HEADER = "ARTICLE_HEADER";
+    /**
+     * The constant COL_URL.
+     */
     public static final String COL_URL = "ARTICLE_URL";
+    /**
+     * The constant COL_PIC_URL.
+     */
     public static final String COL_PIC_URL = "PICTURE_URL";
 
 
-    //creating constructor of the class, matching super
+    /**
+     * Instantiates a new Nytimes data base helper.
+     *
+     * @param contex the contex
+     */
+//creating constructor of the class, matching super
     public nytimes_DataBaseHelper(Activity contex){
         super(contex, DATABASE_NAME, null,VERSION_NUM);
 
