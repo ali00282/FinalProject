@@ -1,4 +1,17 @@
 <resources>
-    <string name="app_name">FinalProject</string>
+
+
+    <string name="app_name">FlightTracker</string>
+    <string name="search">Search</string>
+    <string name="instructions">Instructions</string>
+    <string name="code">Enter Airport Code</string>
+    <string name="m1">View Saved Flights</string>
+    <string name="m2">Help</string>
+    <string name="m3">Choose Language</string>
+    <string name="m4">No Saved Flights</string>
+    <string name="m5">Author Name: Vinay Kumar Singh</string>
+    <string name="m6">Activity Version Number : 1.0</string>
+    <string name="m7">Instructions: Enter the Airport Code on the Main Activity. It will show the time table of all flights. Click on any particular flight to view flight Details. Save the Details to view it at a later stage. You can also delete the saved flights.</string>
+
 
 </resources>
